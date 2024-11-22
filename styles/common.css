@@ -1,0 +1,256 @@
+/* 헤더 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30rem 0;
+    z-index: 10000;
+    width: 100%;
+    transition: transform .3s;
+}
+header .head_logo {
+    position: absolute;
+    top: 20rem;
+    left: 40rem;
+    z-index: 20;
+}
+header .head_logo img {
+    width: 137rem;
+    height: 49rem;
+}
+
+header .head_nav {
+    width: 100%;
+    margin: 0 auto;
+    transition: all .5s;
+}
+
+header .gnb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .gnb li { margin-right: 58rem;}
+header .gnb li:last-child {margin-right: 0;}
+header .gnb li a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20rem;
+    letter-spacing: -1rem;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color .23s;
+    font-family: Acumin Pro, sans-serif;
+}
+header .head_sns {
+    position: absolute;
+    top: 30rem;
+    right: 40rem;
+    display: flex
+;
+    align-items: center;
+    gap: 38rem;
+    z-index: 20;
+}
+header .head_sns li {
+    width: 36rem;
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    transition: background .23s;
+}
+header .head_sns li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header .head_sns li a svg {
+    width: 100%;
+    height: 100%;
+}
+header .head_sns li a svg path {
+    transition: all .23s;
+}
+
+header.h_white {filter: invert(0);}
+header.h_black {filter: invert(0.8);}
+header.h_none {opacity: 0;}
+
+
+header .head_nav {}
+
+header .head_btn {
+    display: none;
+    top: 14rem; right: 14rem;
+    width: 36rem; height: 36rem; position: absolute; 
+    z-index: 10001;
+}
+header .head_btn span {
+    background-color: #fff; display: block;
+    width: 100%; height: 2rem;
+    transition: all .23s;
+}
+
+header .head_btn span:last-child {
+    margin-top: 7rem;
+}
+
+
+/* -------------------------------------------------------- */
+/* 푸터 */
+footer {
+    background: #47a6ff;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 38rem 40rem;
+}
+footer .footer_sns {}
+footer .footer_sns > li {
+    border-bottom: 2px solid #fff;
+    position: relative; margin-top: 30rem;
+}
+footer .footer_sns > li::after {
+    content: "";  
+    background: url("../images/ico_link-arrow.svg") no-repeat 50%/cover; 
+    margin-left: auto;
+    width: 38rem;
+    aspect-ratio: 1 / 1;
+    display: block;
+    transition: all .23s;
+    position: absolute; right: 0; top: 35%; transform: translateY(-50%);
+}
+footer .footer_sns > li a {
+    font-weight: 600;
+    font-size: 32rem;
+    line-height: 1;
+    letter-spacing: -.05em;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .23s;
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 27rem;
+    transition: all .23s;
+    width: 100%;
+}
+footer .footer_sns > li a:hover {color:#fdff92;}
+footer .footer_sns > li a i {
+    display: block;
+    width: 44rem;
+    aspect-ratio: 1 / 1;
+    margin-right: 49rem;
+    transition: all .23s;
+}
+footer .footer_sns > li a svg {
+    width: 100%;
+    height: 100%;
+}
+footer .footer_sns > li a svg path {
+    width: 100%; height: 100%;
+
+}
+footer .footer_sns > li a:hover svg path { fill: #fdff92; }
+footer .footer_info {
+    padding: 50rem 0;
+}
+footer .footer_info * {color: #fff; font-size: 0.875em;}
+footer .footer_info .footer_logo {
+    width: 104rem;
+    height: auto;
+    margin-left: -10rem;
+    aspect-ratio: 104 / 68;
+    margin-bottom: 30rem;
+    mix-blend-mode: plus-lighter;
+}
+footer .footer_info .footer_logo img {
+    width: 100%;
+}
+footer .footer_info .contact {
+    margin-bottom: 30px;
+}
+footer .footer_info .contact dt {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Pretendard;
+    font-size: 14rem;
+    line-height: 1.28;
+    color: #fff;
+    margin-bottom: 8rem;
+    letter-spacing: .02em;
+}
+footer .footer_info .contact dd a {
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 1.28;
+    letter-spacing: .02em;
+    color: #fff;
+    font-family: Acumin_Pro, sans-serif;
+}
+footer .footer_info address {
+    margin-bottom: 60rem;
+}
+footer .footer_info address span {display: block;}
+footer .footer_info address .kor {
+    display: block;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 20rem;
+    color: #fff;
+    letter-spacing: .28rem;
+    text-transform: uppercase;
+    letter-spacing: .28rem;
+}
+
+footer .footer_info address .eng {
+    margin-top: 8rem;
+    display: block;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 18rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .28rem;
+    font-family: Acumin Pro, sans-serif;
+}
+
+footer .footer_info address .kor + footer .footer_info address .eng {
+    margin-top: 8rem;
+    line-height: 18rem;
+}
+
+footer .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 16rem;
+    line-height: 18rem;
+    letter-spacing: .32rem;
+    padding: 0 132rem;
+    
+}
+footer .copyright em {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20rem;
+    text-align: center;
+    font-size: 15rem;
+    font-family: Pretendard_Variable;
+}
+
+footer .copyright span {
+    display: inline-block;
+    font-family: Pretendard_Variable;
+    font-size: 11rem;
+    font-weight: 500;
+    line-height: 16rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    color: #fff;
+}
